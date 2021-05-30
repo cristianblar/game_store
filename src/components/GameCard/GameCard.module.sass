@@ -1,0 +1,63 @@
+@import ../../../styles/variables
+
+.mainContainer
+  background-color: $clear-background
+  border-radius: 18px 0px
+  border: none
+  margin-bottom: 20px
+  margin: 0 auto
+  width: 90%
+  -webkit-box-shadow: 0px 6px 8px 2px rgba(0,0,0,0.4)
+  box-shadow: 0px 6px 8px 2px rgba(0,0,0,0.4)
+  transition: transform 400ms
+  will-change: transform
+  & img
+    border-radius: 18px 0px 0px
+    max-height: 240px
+    object-fit: cover
+    object-position: center
+    width: 100%
+  &:hover
+    transform: scale(1.1)
+
+.textContainer
+  padding: 0 12px 6px
+
+.gameName
+  color: $white
+  font-size: 2rem
+  margin: 0
+  padding: 4px
+
+.listContainer
+  display: flex
+  gap: 8px
+  list-style: none
+  margin: 0
+  padding: 6px 4px
+  & li
+    background-color: $badge-background
+    border-radius: 12px
+    color: $badge-text
+    font-size: 1.2rem
+    height: 16px
+    line-height: 16px
+    padding: 0 6px
+
+.detailsContainer
+  color: $white
+  display: flex
+  font-size: 1.6rem
+  justify-content: space-between
+  padding-right: 12px
+  padding: 8px 4px
+
+.gameRating > svg
+  margin-right: 4px
+
+.gamePrice
+  font-weight: 500
+
+@media screen and ( min-width: 768px )
+  .mainContainer
+    width: 100%

@@ -1,11 +1,15 @@
 import React from 'react';
 
-import Header from '@containers/Header/Header';
+import Sidebar from '@containers/Sidebar/Sidebar';
+import AllGames from '@containers/AllGames/AllGames';
+
+import style from '../styles/index.module.sass';
 
 export default function Home() {
   return (
-    <div>
-      <Header />
+    <div className={style.gridContainer}>
+      <Sidebar />
+      <AllGames />
     </div>
   );
 }

@@ -1,0 +1,9 @@
+@import ./variables
+
+.gridContainer
+  display: grid
+  grid-template-rows: 2 auto-fit
+
+@media screen and ( min-width: 768px )
+  .gridContainer
+    grid-template-columns: 1fr 3fr
