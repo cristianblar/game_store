@@ -1,0 +1,38 @@
+@import ../../../styles/variables
+
+.logoContainer
+  margin: 0
+  order: 1
+  width: 50%
+
+.mainContainer
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 auto
+  width: 90%
+  & ul
+    order: 2
+
+.searchBarContainer
+  margin: 0 auto
+  order: 3
+  width: 100%
+
+@media screen and ( min-width: 768px )
+  .mainContainer
+    flex-wrap: nowrap
+    justify-content: space-between
+    padding: 0 12px
+    width: 100%
+    & ul
+      order: 3
+  
+  .searchBarContainer
+    order: 2
+    width: 60%
+
+  .logoContainer
+    order: 1
+    width: 20%

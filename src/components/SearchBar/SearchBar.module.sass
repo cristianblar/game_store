@@ -1,0 +1,33 @@
+@import ../../../styles/variables
+
+.mainContainer
+  position: relative
+
+.searchIcon
+  color: $clear-placeholder
+  font-size: 3rem
+  left: 8px
+  position: absolute
+  top: calc( 50% - 1.5rem )
+  transition: all 500ms
+
+.searchBar
+  background-color: $clear-background
+  border-radius: 18px
+  border: none
+  color: $clear-placeholder
+  font-size: 2rem
+  height: 48px
+  line-height: 48px
+  padding: 0 48px
+  transition: all 500ms
+  width: 100%
+  &::placeholder
+    color: $clear-placeholder
+  &:hover, &:focus
+    background-color: $white
+    color: $background-black
+    outline: none
+    + .searchIcon
+      color: $background-black
+
