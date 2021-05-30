@@ -10,6 +10,7 @@ interface Props {}
 function AllGames({}: Props): ReactElement {
   return (
     <div className={style.mainContainer}>
+      <h1 className={style.title}>All games</h1>
       <SortButton />
       <GamesList />
     </div>
